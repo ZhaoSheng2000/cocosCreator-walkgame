@@ -46,10 +46,5 @@ export default class NewClass extends cc.Component {
     }
     
 
-    // update (dt) {}
-    
-
-
-    // 两数之和
-    
+    // update (dt) {}    
 }
