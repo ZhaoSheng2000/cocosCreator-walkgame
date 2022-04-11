@@ -64,8 +64,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -375,
-        -775,
+        0,
+        0,
         0,
         0,
         0,
@@ -2197,6 +2197,12 @@
     "_enabled": true,
     "closeButton": {
       "__id__": 54
+    },
+    "signButton": {
+      "__id__": 47
+    },
+    "rewardPrefab": {
+      "__uuid__": "aa4c7a68-bc61-4c4f-bac4-fab01001bee0"
     },
     "_id": ""
   },

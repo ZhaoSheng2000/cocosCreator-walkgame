@@ -14,6 +14,8 @@ export default class NewClass extends cc.Component {
     index:number=1;
     // LIFE-CYCLE CALLBACKS:
 
+    time = null
+
     onLoad () {
         this.sprite=this.node.getComponent(cc.Sprite);
 
@@ -23,7 +25,7 @@ export default class NewClass extends cc.Component {
     }
 
     start () {
-        setInterval(() => {
+        this.time =  setInterval(() => {
             this.onTimer();
         }, 32);
     }
@@ -34,9 +36,14 @@ export default class NewClass extends cc.Component {
         this.sprite.spriteFrame =this.frames[this.index];
     
         this.index++;
-        if(this.index >= this.frames.length)//这里不适用取余，数字在不断增大超出表示范围
+        if(this.index >= this.frames.length)
         this.index = 0;
         }
+
+    // 清除定时器，不然切换场景会出现问题，控制台报错
+    onDestroy() {
+        clearInterval(this.time);    
+    }
     
 
     // update (dt) {}

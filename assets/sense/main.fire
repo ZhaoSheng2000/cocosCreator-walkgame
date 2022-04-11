@@ -1140,7 +1140,7 @@
   {
     "__type__": "cc.Node",
     "_name": "topButton",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 2
     },
@@ -4325,7 +4325,9 @@
     "_N$hoverSprite": null,
     "hoverSprite": null,
     "_N$disabledSprite": null,
-    "_N$target": null,
+    "_N$target": {
+      "__id__": 79
+    },
     "_id": "45jeDz5jpBIoF115JqDaH5"
   },
   {
@@ -4866,7 +4868,9 @@
     "_N$hoverSprite": null,
     "hoverSprite": null,
     "_N$disabledSprite": null,
-    "_N$target": null,
+    "_N$target": {
+      "__id__": 88
+    },
     "_id": "986VyV6F1O0KlKuP92RE1O"
   },
   {
@@ -5312,13 +5316,15 @@
     "_N$hoverSprite": null,
     "hoverSprite": null,
     "_N$disabledSprite": null,
-    "_N$target": null,
+    "_N$target": {
+      "__id__": 99
+    },
     "_id": "f3xKfQBwBAYJTEaJ15+U48"
   },
   {
     "__type__": "cc.Node",
     "_name": "bottomButton",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 2
     },
@@ -6134,7 +6140,7 @@
   {
     "__type__": "cc.Node",
     "_name": "taskList",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 2
     },
@@ -8661,6 +8667,15 @@
     },
     "signPrefeb": {
       "__uuid__": "88d7d3ca-7f04-4a41-ac09-82368f73e625"
+    },
+    "sleepBtnNode": {
+      "__id__": 99
+    },
+    "sleepPrefeb": {
+      "__uuid__": "45476f4a-dbde-4a59-b92c-c30c0e35f064"
+    },
+    "mapBtnNode": {
+      "__id__": 79
     },
     "_id": "ceS9jNRFRBNazKYx8I/tms"
   }
