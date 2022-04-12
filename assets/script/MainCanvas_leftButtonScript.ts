@@ -30,16 +30,17 @@ export default class NewClass extends cc.Component {
         this.node.addChild(signNode);
     }
     showSleep(){
+        // console.log(who);
+        
         let sleepNode = cc.instantiate(this.sleepPrefeb);
         sleepNode.setPosition(0,0);
         this.node.addChild(sleepNode);
+        console.log('sleepload');
+        
+
     }
 
     showMap(){
-        console.log('showMap');
-        cc.director.preloadScene('map',()=>{
-            console.log('Map preload success');
-        });
         cc.director.loadScene('map');
         
     }

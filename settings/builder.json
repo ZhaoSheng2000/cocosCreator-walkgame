@@ -51,5 +51,8 @@
     "recordPath": ""
   },
   "appBundle": false,
-  "agreements": {}
+  "agreements": {
+    "20200904180755": false,
+    "20200904180716": false
+  }
 }

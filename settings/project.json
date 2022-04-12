@@ -8,7 +8,15 @@
     ]
   ],
   "excluded-modules": [
-    "3D Physics/Builtin"
+    "Audio",
+    "AudioSource",
+    "Animation",
+    "EditBox",
+    "3D",
+    "3D Primitive",
+    "3D Physics/cannon.js",
+    "3D Physics/Builtin",
+    "3D Particle"
   ],
   "preview-port": 7456,
   "design-resolution-width": 750,
@@ -32,5 +40,6 @@
     "audience": {
       "enable": false
     }
-  }
+  },
+  "last-module-event-record-time": 1649748637901
 }
