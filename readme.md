@@ -17,11 +17,11 @@ CocosCreator版本：2.4.5
 
 选择「项目」-「项目设置」-「模块设置」中可以勾选掉项目中没有使用到的模块，减少打包体积。
 
-![image-20220412203820561](/Users/admin/Library/Application Support/typora-user-images/image-20220412203820561.png)
+![](https://raw.githubusercontent.com/ZhaoSheng2000/imgBed/main/img/202204122126492.png)
 
 如果打包后体积过大（4M以上）就需要在构建发布中勾选
 
-![image-20220412203950025](/Users/admin/Library/Application Support/typora-user-images/image-20220412203950025.png)
+![](https://raw.githubusercontent.com/ZhaoSheng2000/imgBed/main/img/202204122125295.png)
 
 官方规定打包体积要小于4M，这里我的项目构建后大小为2M多，所以就没有用到这个选项。
 
@@ -31,13 +31,13 @@ CocosCreator版本：2.4.5
 
 点击「云开发」，根据自己的需求选择套餐开通。
 
-![image-20220412204403564](/Users/admin/Library/Application Support/typora-user-images/image-20220412204403564.png)
+![](https://raw.githubusercontent.com/ZhaoSheng2000/imgBed/main/img/202204122126098.png)
 
 ### 设置云开发本地文件路径
 
 由于每次构建都会删除掉build目录下wechatgame内的所有文件，所以我们为了方便可以把云开发本地目录设置到wechatgame的同级目录下，这样再次构建文件的时候只会刷新wechatgame内的文件，而云函数不受影响。（被折磨了几次反复创建本地云文件才想起来！）这时需要我们手动导入整个build文件为根目录同时修改project.config.json文件。
 
-![image-20220412204919805](/Users/admin/Library/Application Support/typora-user-images/image-20220412204919805.png)
+![](https://raw.githubusercontent.com/ZhaoSheng2000/imgBed/main/img/202204122127160.png)
 
 需要设置小程序的运行目录以及云函数的本地目录。
 
@@ -45,7 +45,7 @@ CocosCreator版本：2.4.5
 
 所以按照我的操作，目录看起来是这样的。
 
-![image-20220412205028182](/Users/admin/Library/Application Support/typora-user-images/image-20220412205028182.png)
+![](https://raw.githubusercontent.com/ZhaoSheng2000/imgBed/main/img/202204122132128.png)
 
 注意修改的是最外层的project.config.json，内层的wechatgame中的是每次构建自动生成的，强迫症也可删除掉。
 
@@ -53,9 +53,7 @@ CocosCreator版本：2.4.5
 
 在云函数文件夹下右键选择新建云函数，创建好后编写index.js逻辑代码。右键上传
 
-![image-20220412205637305](/Users/admin/Library/Application Support/typora-user-images/image-20220412205637305.png)
-
-
+![](https://raw.githubusercontent.com/ZhaoSheng2000/imgBed/main/img/202204122131721.png)
 
 ### 初始化云函数
 
@@ -63,7 +61,7 @@ CocosCreator版本：2.4.5
 
 ⚠️每次构建后都需要重新添加，不然控制台会报错：云函数没有初始化。
 
-![image-20220412205745937](/Users/admin/Library/Application Support/typora-user-images/image-20220412205745937.png)
+![](https://raw.githubusercontent.com/ZhaoSheng2000/imgBed/main/img/202204122130471.png)
 
 ### CocosCreator中调用云函数
 
@@ -110,14 +108,15 @@ export default class NewClass extends cc.Component {
 
 注意需要判断环境，不然的话在本地web调试的时候就会报错。还有一个不爽的就是wx在vscode是红的，就像这样，但是不影响执行。
 
-![image-20220412210520364](/Users/admin/Library/Application Support/typora-user-images/image-20220412210520364.png)
+![image-20220412213234759](/Users/admin/Library/Application Support/typora-user-images/image-20220412213234759.png)
 
 编写完成重新构建一遍，如果只修改了脚本文件的话可以勾选「只构建脚本」加快构建速度。
 
-![image-20220412210718673](/Users/admin/Library/Application Support/typora-user-images/image-20220412210718673.png)
+![](https://raw.githubusercontent.com/ZhaoSheng2000/imgBed/main/img/202204122132557.png)
 
 构建完成后导入或者刷新微信开发者工具，点击按钮就可以看到云函数正常调用了。
 
-![image-20220412210826248](/Users/admin/Library/Application Support/typora-user-images/image-20220412210826248.png)
+![](https://raw.githubusercontent.com/ZhaoSheng2000/imgBed/main/img/202204122133811.png)
 
 测试没有问题以后就可以编写其他云函数逻辑进行调用了。
+
