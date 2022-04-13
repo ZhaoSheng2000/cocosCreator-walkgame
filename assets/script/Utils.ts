@@ -1,10 +1,11 @@
 
 // 延迟函数
-export function delay(time){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
+export function delay(time) {
+    return new Promise<void>(function (resolve) {
+        setTimeout(function () {
+            resolve();
         }, time);
-    })
+    });
 }
 // 关闭动画
 export async function closeAnimation(node,x,y){
