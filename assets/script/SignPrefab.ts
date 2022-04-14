@@ -23,12 +23,6 @@ export default class NewClass extends cc.Component {
         awardNode.setPosition(0,0);
         this.node.addChild(awardNode);
     }
-
-
-  
-
-
-
      onLoad () {
         // 点击关闭按钮
         this.closeButton.on('click', this.closeSign, this);

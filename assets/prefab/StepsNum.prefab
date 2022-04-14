@@ -334,8 +334,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 513.89,
-      "height": 63
+      "width": 452.22,
+      "height": 55.44
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -388,8 +388,8 @@
     "_dstBlendFactor": 771,
     "_string": "每日走走路 轻松换能量",
     "_N$string": "每日走走路 轻松换能量",
-    "_fontSize": 50,
-    "_lineHeight": 50,
+    "_fontSize": 44,
+    "_lineHeight": 44,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,

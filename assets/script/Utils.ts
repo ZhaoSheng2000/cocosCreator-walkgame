@@ -13,5 +13,5 @@ export async function closeAnimation(node,x,y){
     .to(0.3, {position:cc.v3(x,y,0), scale:0 })
     .start()
     await delay(300)
-    this.node.destroy();
+    node.destroy();
 }

@@ -2,7 +2,7 @@
   "appid": "wx81f471e7c0f398d8",
   "orientation": "portrait",
   "separate_engine": true,
-  "REMOTE_SERVER_ROOT": "",
+  "REMOTE_SERVER_ROOT": "http://114.55.25.180:8100/cocos/",
   "subContext": "",
   "startSceneAssetBundle": false
 }
