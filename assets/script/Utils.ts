@@ -15,3 +15,14 @@ export async function closeAnimation(node,x,y){
     await delay(300)
     node.destroy();
 }
+// 加载远程图片
+export function loadRemoteImage(node, url) {
+    cc.assetManager.loadRemote<cc.Texture2D>(url, function (err, pic) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+        let spriteFrame = new cc.SpriteFrame(pic);
+        node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+    });
+}
