@@ -6,11 +6,17 @@ export default class NewClass extends cc.Component {
 
     @property(cc.Node)
     closeBtn: cc.Node = null;
+    @property(cc.Prefab)
+    bagItemPrefab:cc.Prefab = null;
 
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
 
+    init(){
+        // TODO: 渲染bagItem
+    }
+    
     start () {
         this.closeBtn.on('click', this.close, this);
     }

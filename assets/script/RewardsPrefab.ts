@@ -8,24 +8,23 @@ export default class NewClass extends cc.Component {
     @property(cc.Node)
     closeButton: cc.Node = null;
 
-   @property(cc.Node)
+    @property(cc.Node)
     closeButton2: cc.Node = null;
+    
+    @property(cc.Label)
+    num:cc.Label = null;
+    
 
 
-    //   // 延迟函数
-    //   delay(time){
-    //     return new Promise((resolve, reject) => {
-    //         setTimeout(() => {
-    //         }, time);
-    //     })
-    // }
 
     async closeSign(){
+        // TODO:增加能量
+
        closeAnimation(this.node,375,775);
     }
-
-  
-
+    init(num){
+        this.num.string = num;
+    }
 
 
      onLoad () {

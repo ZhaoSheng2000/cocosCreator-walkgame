@@ -16,11 +16,14 @@ export default class NewClass extends cc.Component {
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        loadRemoteImage(this.icon,'http://114.55.25.180:8099/map/caisebeijing.png')
     }
 
     start () {
-        this.statusNo.string = '123'
+    }
+    // 初始化
+    init(img,text,city,finish){
+        loadRemoteImage(this.icon,'http://114.55.25.180:8099/map/caisebeijing.png');
+        finish?this.statusYes.string = '完成':this.statusNo.string = '未完成';
     }
 
 
