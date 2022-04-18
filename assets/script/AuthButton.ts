@@ -39,7 +39,9 @@ export default class NewClass extends cc.Component {
                             },
                             success: res => {
                                 console.log('callFunction  result: ', res)
+                                window['wx'].showToast({title:'登录成功',icon:'none'});
                                 cc.director.loadScene('main');
+
                             }
                         })
                     }

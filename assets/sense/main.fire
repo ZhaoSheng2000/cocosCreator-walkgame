@@ -1906,7 +1906,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "licheng_text",
+    "_name": "energy_text",
     "_objFlags": 0,
     "_parent": {
       "__id__": 35
@@ -2001,7 +2001,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "licheng_num",
+    "_name": "energy_num",
     "_objFlags": 0,
     "_parent": {
       "__id__": 35
@@ -3206,7 +3206,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 454.99999999999994,
+      "width": 0,
       "height": 20
     },
     "_anchorPoint": {
@@ -3320,7 +3320,7 @@
       "__id__": 64
     },
     "_N$mode": 0,
-    "_N$progress": 0.7,
+    "_N$progress": 0,
     "_N$reverse": false,
     "_id": "9c5vpecoRC0J2zXKuHu+dB"
   },
@@ -10045,6 +10045,24 @@
       "__id__": 2
     },
     "_enabled": true,
+    "currentMap": {
+      "__id__": 48
+    },
+    "toEnd": {
+      "__id__": 58
+    },
+    "totalDistance": {
+      "__id__": 55
+    },
+    "gone": {
+      "__id__": 32
+    },
+    "progressBar": {
+      "__id__": 66
+    },
+    "energy": {
+      "__id__": 41
+    },
     "_id": "46zoUPBgVIQp0+KDoI93fx"
   }
 ]
