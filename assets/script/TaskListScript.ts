@@ -21,13 +21,16 @@ export default class NewClass extends cc.Component {
         // 点击全部任务按钮
         this.allTaskButton.on('click', this.showAllTask, this);
 
+        // 初始化数据
+
+
     }
     showAllTask(){
         
         this.closeButton.active =  true;
         this.allTaskButton.active = false;
         cc.tween(this.node)
-        .to(0.5, { position: cc.v3(0, 380) },{ easing: 'backOut' })
+        .to(0.5, { position: cc.v3(0, 400) },{ easing: 'backOut' })
         .start()
     }
 
