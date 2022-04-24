@@ -15,6 +15,20 @@ export default class NewClass extends cc.Component {
 
     // LIFE-CYCLE CALLBACKS:
 
+    init(obj){
+        console.log(obj);
+        
+        this.Title.string = obj.title;
+        this.awardNum.string = obj.energy;
+        if(obj.passby){
+            this.toFinishButton.active = false;
+            this.competedButton.active = true;
+        }else{
+            this.toFinishButton.active = true;
+            this.competedButton.active = false;
+        }
+    }
+
     // onLoad () {}
 
     // update (dt) {}

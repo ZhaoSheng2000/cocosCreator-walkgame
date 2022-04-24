@@ -40,6 +40,7 @@ export default class NewClass extends cc.Component {
         let signNode = cc.instantiate(this.signPrefeb);
         signNode.setPosition(-375,-780);
         this.node.addChild(signNode);
+
     }
     showSleep(){
         // console.log(who);
