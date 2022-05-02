@@ -196,7 +196,7 @@
       "__id__": 1
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 6
@@ -215,7 +215,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 176.66,
+      "width": 0,
       "height": 37.8
     },
     "_anchorPoint": {

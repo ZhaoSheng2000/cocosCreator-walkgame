@@ -21,9 +21,11 @@ export default class NewClass extends cc.Component {
     start () {
     }
     // 初始化
-    init(img,text,city,finish){
-        loadRemoteImage(this.icon,'http://114.55.25.180:8099/map/caisebeijing.png');
-        finish?this.statusYes.string = '完成':this.statusNo.string = '未完成';
+    init(obj){
+        obj.passby?
+        loadRemoteImage(this.icon,`http://114.55.25.180:8099/map/caise${obj.name}.png`):
+        loadRemoteImage(this.icon,`http://114.55.25.180:8099/map/heibai${obj.name}.png`);
+        obj.passby?this.statusYes.string = `${obj.place} 完成`:this.statusNo.string = `${obj.place} 未完成`;
     }
 
 

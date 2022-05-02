@@ -1,6 +1,6 @@
 {
   "ver": "2.3.5",
-  "uuid": "8d11d185-4726-47fa-9af4-b3908b173f7e",
+  "uuid": "6559fb34-a5f9-45fd-8589-51a7caf37b34",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,10 +11,10 @@
   "height": 267,
   "platformSettings": {},
   "subMetas": {
-    "chengshi_bg": {
+    "bg_zhengzhou": {
       "ver": "1.0.4",
-      "uuid": "53774156-45fc-40d3-8842-855058a147e3",
-      "rawTextureUuid": "8d11d185-4726-47fa-9af4-b3908b173f7e",
+      "uuid": "296b3930-b96b-40cc-900f-c30e9c0b2665",
+      "rawTextureUuid": "6559fb34-a5f9-45fd-8589-51a7caf37b34",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

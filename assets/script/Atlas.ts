@@ -5,6 +5,8 @@ export default class NewClass extends cc.Component {
 
     @property(cc.SpriteAtlas)
     atlas:cc.SpriteAtlas = null;
+    @property(cc.SpriteAtlas)
+    atlasMale:cc.SpriteAtlas = null;
 
     @property(cc.SpriteFrame)
     frames: cc.SpriteFrame[] = [];
@@ -20,8 +22,8 @@ export default class NewClass extends cc.Component {
         this.sprite=this.node.getComponent(cc.Sprite);
 
         // 从图集中获取所有帧图片
-        if(this.atlas != null)
-        this.frames = this.atlas.getSpriteFrames();
+        if(this.atlasMale != null)
+        this.frames = this.atlasMale.getSpriteFrames();
     }
 
     start () {

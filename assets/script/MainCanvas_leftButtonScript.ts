@@ -57,6 +57,28 @@ export default class NewClass extends cc.Component {
         
     }
     showStepNum(){        
+        if (cc.sys.platform === cc.sys.WECHAT_GAME) {
+            window['wx'].getSetting({
+                success(res) {
+                if (!res.authSetting['scope.werun']) {
+                    window['wx'].authorize({
+                    scope: 'scope.werun',
+                    success:()=> {
+                        window['wx'].showToast({
+                            title: '授权成功',
+                            icon: 'success',
+                            duration: 2000
+                          })
+                    }
+                    })
+                }
+            }
+        })
+           
+              
+        }
+
+
         let stepNumNode = cc.instantiate(this.stepNumPrefab);
         stepNumNode.setPosition(-375,-1500);
         this.node.addChild(stepNumNode);

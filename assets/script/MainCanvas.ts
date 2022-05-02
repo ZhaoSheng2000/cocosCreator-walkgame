@@ -45,12 +45,7 @@ export default class NewClass extends cc.Component {
             }
         }
         // 初始化数据
-        // this.currentMap.string = '测试';
-        // this.toEnd.string = '12345';
-        // this.totalDistance.string = '12345';
-        // this.gone.string = '150';
-        // this.progressBar.progress = 0.6;
-        // this.energy.string = '100';
+ 
         // 顶部地图数据
         window['wx'].cloud.callFunction({
            name: 'getCurMap',
@@ -68,7 +63,7 @@ export default class NewClass extends cc.Component {
                 this.totalDistance.string = total_distance;
                 this.gone.string = gone;
                 this.progressBar.progress = (gone / total_distance);
-                this.energy.string = '100';
+                this.energy.string = this.energy_num.toString();
 
                }
         })
@@ -84,9 +79,23 @@ export default class NewClass extends cc.Component {
                }
         })
         // 监听能量变化
-        this.node.on('energy', function (msg) {
-            console.log('mainCanvas Receved:'+msg);
+        this.node.on('changeEnergy',  (event) => {
+            console.log(event.detail);
+            this.energy_num += event.detail;
+            this.energy.string = this.energy_num.toString();
           });
+        // 监听里程变化
+        this.node.on('changeDistance',  (event) => {
+            console.log(event.detail);
+            // 已走
+            this.gone_distance += event.detail;
+            this.gone.string = this.gone_distance.toString();
+            // 距离终点
+            this.to_end -= event.detail;
+            this.toEnd.string = this.to_end.toString();
+          });
+
+        
 
 
 

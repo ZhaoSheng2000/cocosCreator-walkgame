@@ -26,3 +26,21 @@ export function loadRemoteImage(node, url) {
         node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
     });
 }
+
+export function throttle(func, wait) {      
+    var previous = 0;      
+     return function () {          
+         var now = Date.now();          
+         var context = this;         
+         var args = arguments;          
+     if (now - previous > wait) {
+          func.apply(context, args);
+          previous = now;
+      }else{
+          console.log('时间不够');
+          
+      }
+  }
+}
+
+ 
